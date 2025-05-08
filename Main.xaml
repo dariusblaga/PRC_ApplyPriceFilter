@@ -84,7 +84,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="656.8,368" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1417.6000000000001,666.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Object" Name="strComponentName" />
       <Variable x:TypeArguments="x:String" Default="Troostwijk_WebsiteURL" Name="AssetWebsiteName" />
@@ -95,12 +95,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[AssetWebsiteName]" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Auction Bidder" sap:VirtualizedContainerService.HintSize="416,176.4" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[AssetWebsiteName]" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Darius B" sap:VirtualizedContainerService.HintSize="416,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[strAuctionsWebsite]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Troostwijk - Apply Price Filters - Invoke Workflow File (Troostwijk - Apply Price Filters.xaml)" sap:VirtualizedContainerService.HintSize="416,168.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Troostwijk - Apply Price Filters.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Troostwijk - Apply Price Filters - Invoke Workflow File (Troostwijk - Apply Price Filters.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Troostwijk - Apply Price Filters.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_strPriceFilter">[in_strPriceFilter]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_strAuctionsWebsite">[strAuctionsWebsite]</InArgument>
